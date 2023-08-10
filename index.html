@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="info-inicial">
+    <div>
+      <p>Tipo de Estudio</p><select name="estudio" id="estudio" class="form-control input-md">
+        <option value="" disabled selected hidden="">
+          Seleccione...
+        </option>
+        <option value="estudio-con-medio-de-contraste-yodado">
+          Estudio con medio de contraste yodado
+        </option>
+        <option value="resonancia-magnetica-contrastada">
+          Resonancia magnética contrastada
+        </option>
+      </select>
+    </div>
+    <div>
+      <p>Ocupacióm</p><select name="ocupacion" id="ocupacion" class="form-control input-md">
+        <option value="" disabled selected hidden="">
+          Seleccione...
+        </option>
+        <option value="medico">
+          medico
+        </option>
+        <option value="tecnico-en-radiologia">
+          Tecnico en radiologia
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="cuestionario" id="cuestionario">
+    <div>
+      <p>Nombre</p><input type="text" name="nombre" placeholder="Nombre">
+    </div>
+    <div>
+      <p>Apellido</p><input type="text" name="apellido" placeholder="Apellido">
+    </div>
+    <div>
+      <p>Documento</p><input type="number" name="documento" placeholder="cc">
+    </div>
+    <div>
+      <p>Sexo</p><select name="sexo" id="sexo" class="form-control input-md">
+        <option value="" disabled selected hidden="">
+          Seleccione...
+        </option>
+        <option value="femenino">
+          Femenino
+        </option>
+        <option value="masculino">
+          masculino
+        </option>
+      </select>
+    </div>
+    <div id="estudio-profesional">
+      <div id="emcy-tr">
+        <div>
+          <p>Es una urgencia?</p><select name="urgencia" id="urgencia" class="form-control input-md">
+            <option value="" disabled selected hidden="">
+              Seleccione...
+            </option>
+            <option value="si">
+              Si
+            </option>
+            <option value="no">
+              No
+            </option>
+          </select>
+          <div id="dialisis">
+            <p>Paciente en diálisis por mas de 3 meses?</p><select name="dialisis-pregunta" id="dialisis-pregunta" class="form-control input-md">
+                <option value="" disabled selected hidden="">
+                  Seleccione...
+                </option>
+                <option value="si">
+                  Si
+                </option>
+                <option value="no">
+                  No
+                </option>
+              </select>
+
+          </div>
+        </div>
+        <div>
+          <div id="emcy-m"></div>
+          <div id="rmc-m"></div>
+          <div id="rmc-tr"></div>
+        </div>
+      </div>
+      <script src="./main.js"></script>
+    </div>
+  </div>
+</body>
+</html>
